@@ -61,7 +61,7 @@ export const config: IAppConfig = {
   },
   server: {
     bindingHost: env.get('SERVER_BINDING_HOST') || undefined,
-    bindingPort: env.get.int(['SERVER_BINDING_PORT', 'PORT'], 3000),
+    bindingPort: env.get.int(['SERVER_BINDING_PORT', 'PORT'], 5000),
     externalHost: env.get('SERVER_EXTERNAL_HOST') || undefined
   },
   sentry: {
