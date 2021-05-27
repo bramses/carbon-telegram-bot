@@ -3,10 +3,21 @@
   "description": "Telegram Chatbot that generates carbon.now.sh images from source code",
   "repository": "https://github.com/rjmunhoz/carbon-telegram-bot",
   "logo": "https://github.com/carbon-app/carbon/raw/master/static/brand/logo-square.png",
-  "keywords": ["node", "telegram", "code", "chatbot", "carbon", "syntax"],
+  "keywords": [
+    "node",
+    "telegram",
+    "code",
+    "chatbot",
+    "carbon",
+    "syntax"
+  ],
   "env": {
     "TELEGRAM_TOKEN": {
       "description": "Telegram Bot API token",
+      "required": true
+    },
+    "STENOGRAPHY_TOKEN": {
+      "description": "Steno Bot API token",
       "required": true
     },
     "SERVER_EXTERNAL_HOST": {
