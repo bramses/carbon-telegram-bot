@@ -41,7 +41,8 @@
     "puppeteer": "^1.19.0",
     "sugar-env": "^1.5.7",
     "telegraf": "^3.33.3",
-    "telegraf-inline-menu": "^4.0.0"
+    "telegraf-inline-menu": "^4.0.0",
+    "tsc": "^2.0.3"
   },
   "devDependencies": {
     "@types/mongodb": "^3.3.7",
