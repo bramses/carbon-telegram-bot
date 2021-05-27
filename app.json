@@ -2,7 +2,6 @@
   "name": "Carbon.now.sh Telegram Bot",
   "description": "Telegram Chatbot that generates carbon.now.sh images from source code",
   "repository": "https://github.com/rjmunhoz/carbon-telegram-bot",
-  "logo": "https://github.com/carbon-app/carbon/raw/master/static/brand/logo-square.png",
   "keywords": [
     "node",
     "telegram",
