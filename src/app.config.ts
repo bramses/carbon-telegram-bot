@@ -13,6 +13,9 @@ export interface IAppConfig {
   sentry: {
     dsn?: string
   }
+  stenography: {
+    token: string
+  }
   mongodb: IMongoParams
   logMessages: boolean
 }
@@ -44,7 +47,6 @@ export class MissingRequiredEnvError extends Error {
 
 function requiredString(names: string | string[]) {
   const value = env.get(names)
-
   if (!value) throw new MissingRequiredEnvError(names)
 
   return value
@@ -53,6 +55,9 @@ function requiredString(names: string | string[]) {
 export const config: IAppConfig = {
   telegram: {
     token: requiredString(['TELEGRAM_TOKEN', 'TELEGRAM_API_TOKEN'])
+  },
+  stenography: {
+    token: requiredString(['STENOGRAPHY_TOKEN'])
   },
   server: {
     bindingHost: env.get('SERVER_BINDING_HOST') || undefined,
