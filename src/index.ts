@@ -3,6 +3,8 @@ import * as Sentry from '@sentry/node'
 import server from './presentation/server'
 import { RewriteFrames } from '@sentry/integrations'
 
+// art
+
 if (config.sentry.dsn) Sentry.init({
   dsn: config.sentry.dsn,
   integrations: [
